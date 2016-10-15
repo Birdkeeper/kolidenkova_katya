@@ -1,0 +1,107 @@
+************* Module 1__1__brackets.main
+C: 17, 0: Line too long (204/100) (line-too-long)
+C: 31, 0: Trailing newlines (trailing-newlines)
+C:  1, 0: Missing module docstring (missing-docstring)
+C:  1, 0: Invalid constant name "string" (invalid-name)
+C:  2, 0: Invalid constant name "brackets" (invalid-name)
+C:  3, 0: Invalid constant name "open_brackets" (invalid-name)
+C:  4, 0: Invalid constant name "err" (invalid-name)
+C:  5, 0: Invalid constant name "index" (invalid-name)
+R:  7, 7: Too many boolean expressions in if statement (6/5) (too-many-boolean-expressions)
+R: 17,13: Too many boolean expressions in if statement (6/5) (too-many-boolean-expressions)
+C: 24,30: Comparison to True should be just 'expr' or 'expr is True' (singleton-comparison)
+
+
+Report
+======
+24 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |1      |1          |=          |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|method   |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|function |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |29     |87.88 |29       |=          |
++----------+-------+------+---------+-----------+
+|docstring |0      |0.00  |0        |=          |
++----------+-------+------+---------+-----------+
+|comment   |0      |0.00  |0        |=          |
++----------+-------+------+---------+-----------+
+|empty     |4      |12.12 |4        |=          |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |0        |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |0.000    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |9      |9        |=          |
++-----------+-------+---------+-----------+
+|refactor   |2      |2        |=          |
++-----------+-------+---------+-----------+
+|warning    |0      |0        |=          |
++-----------+-------+---------+-----------+
+|error      |0      |0        |=          |
++-----------+-------+---------+-----------+
+
+
+
+Messages
+--------
+
++-----------------------------+------------+
+|message id                   |occurrences |
++=============================+============+
+|invalid-name                 |5           |
++-----------------------------+------------+
+|too-many-boolean-expressions |2           |
++-----------------------------+------------+
+|trailing-newlines            |1           |
++-----------------------------+------------+
+|singleton-comparison         |1           |
++-----------------------------+------------+
+|missing-docstring            |1           |
++-----------------------------+------------+
+|line-too-long                |1           |
++-----------------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 5.42/10 (previous run: 5.42/10, +0.00)
+

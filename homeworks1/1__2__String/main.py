@@ -28,9 +28,10 @@ print("Введите строку")
 string = input()
 string = string.capitalize() 
 list_words = string.split(" ")
-list_words1 = string.split(" ")
+# Переменные типа name1 - ОЧЕНЬ плохо
+list_words1 = string.split(" ")  # Зачем?
 new_str = ""
-new_str1 = ""
+new_str1 = ""  # Зачем?
 
 # Замена контактов с пом. встроенных функций
 for i in range(0, len(list_words)):
@@ -56,3 +57,15 @@ new_str3 = re.sub(r'(\d){3,}', "", new_str2)
 
 print("фстроенные функции: ", new_str)
 print("Регулярные выражения: ", new_str3)
+
+
+"""
+PEP8 - прочесть, запомнить, использовать всегда и везде:
+https://drive.google.com/file/d/0B7cDWj1-Z0r0MmYwZjJhZWEtMjk1Zi00NWE5LWEzNTQtOTFjNjcwYjdhMGRl/view?ddrp=1&hl=ru#
+
+Разбей код на модули (функции, классы)
+
+__name__=='__main__'
+
+Ознакомься со всеми встроенными функциями python для строк, и перепиши код под них
+"""

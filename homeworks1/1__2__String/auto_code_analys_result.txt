@@ -1,0 +1,124 @@
+************* Module 1__2__String.main
+C:  5, 0: Line too long (106/100) (line-too-long)
+W:  5, 0: Bad indentation. Found 8 spaces, expected 4 (bad-indentation)
+W:  7, 0: Bad indentation. Found 12 spaces, expected 8 (bad-indentation)
+W:  8, 0: Bad indentation. Found 8 spaces, expected 4 (bad-indentation)
+W:  9, 0: Bad indentation. Found 12 spaces, expected 8 (bad-indentation)
+C: 29, 0: Trailing whitespace (trailing-whitespace)
+C:  1, 0: Missing module docstring (missing-docstring)
+C:  4, 0: Missing function docstring (missing-docstring)
+W:  4,14: Redefining name 'string' from outer scope (line 28) (redefined-outer-name)
+R:  5, 8: The if statement can be replaced with 'return bool(test)' (simplifiable-if-statement)
+C: 12, 0: Missing function docstring (missing-docstring)
+W: 12,10: Redefining name 'string' from outer scope (line 28) (redefined-outer-name)
+W: 13, 4: Redefining name 'word' from outer scope (line 53) (redefined-outer-name)
+C: 21, 0: Missing function docstring (missing-docstring)
+W: 21,14: Redefining name 'string' from outer scope (line 28) (redefined-outer-name)
+R: 22, 4: The if statement can be replaced with 'return bool(test)' (simplifiable-if-statement)
+C: 28, 0: Invalid constant name "string" (invalid-name)
+C: 29, 0: Invalid constant name "string" (invalid-name)
+C: 30, 0: Invalid constant name "list_words" (invalid-name)
+C: 31, 0: Invalid constant name "list_words1" (invalid-name)
+C: 32, 0: Invalid constant name "new_str" (invalid-name)
+C: 33, 0: Invalid constant name "new_str1" (invalid-name)
+C: 39, 0: Invalid constant name "new_str1" (invalid-name)
+C: 45, 0: Invalid constant name "new_str2" (invalid-name)
+C: 48, 0: Invalid constant name "new_list" (invalid-name)
+C: 55, 0: Invalid constant name "new_str3" (invalid-name)
+
+
+Report
+======
+39 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |1      |NC         |NC         |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|method   |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|function |3      |NC         |NC         |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |44     |73.33 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |0      |0.00  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |3      |5.00  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |13     |21.67 |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |NC       |NC         |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |NC       |NC         |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |16     |NC       |NC         |
++-----------+-------+---------+-----------+
+|refactor   |2      |NC       |NC         |
++-----------+-------+---------+-----------+
+|warning    |8      |NC       |NC         |
++-----------+-------+---------+-----------+
+|error      |0      |NC       |NC         |
++-----------+-------+---------+-----------+
+
+
+
+Messages
+--------
+
++--------------------------+------------+
+|message id                |occurrences |
++==========================+============+
+|invalid-name              |10          |
++--------------------------+------------+
+|redefined-outer-name      |4           |
++--------------------------+------------+
+|missing-docstring         |4           |
++--------------------------+------------+
+|bad-indentation           |4           |
++--------------------------+------------+
+|simplifiable-if-statement |2           |
++--------------------------+------------+
+|trailing-whitespace       |1           |
++--------------------------+------------+
+|line-too-long             |1           |
++--------------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 3.33/10
+
