@@ -7,11 +7,16 @@ def distance(point1,point2):
     return(sqrt(x**2+ y**2))
 
 try:
+    """
+    В try...except оборачиваются как можно меньшие куски кода.
+    IndexError ловится когда мы обращаемся по индексу. Потому только обращения по индексу и надо обрабатывать IndexError-ом
+    """
     points = []
     for line in f:
         point = line.strip()
         points.append(point.split(" "))
 
+    # Здесь ты переопределяешь встроенные функции max и min. Не надо так
     max = distance(points[0], points[1])
     min = distance(points[0], points[1])
 
@@ -29,3 +34,8 @@ except IndexError:
     print("Incorrect data!")
 except ValueError:
     print("Incorrect data! Erase all blank lines and make sure that all lines contain nothing but numbers!")
+
+
+"""
+Все замечания из предыдущих заданий
+"""
