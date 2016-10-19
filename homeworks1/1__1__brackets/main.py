@@ -46,8 +46,8 @@ def check_the_brackets(list_of_brackets):
         print("-1")
 
 if __name__ == '__main__':
-    brackets = []
     for string in sys.argv[1:]:
+        brackets = []
         for line in string:
             if line == "{" or line == "}" or line == "[" or line == "]" or line == "(" or line == ")":
                 brackets.append(line)
