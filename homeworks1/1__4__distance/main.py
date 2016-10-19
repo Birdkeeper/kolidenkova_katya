@@ -12,9 +12,13 @@ def read_file(file_name):
     for line in f:
         point = line.strip()
         new_list_of_coordinates = point.split(" ")
-        if len(new_list_of_coordinates) == 2 and new_list_of_coordinates[0].isdigit() and \
-                new_list_of_coordinates[1].isdigit():
-            list_of_coordinates.append(new_list_of_coordinates)
+        if len(new_list_of_coordinates) == 2:
+            try:
+                new_list_of_coordinates[0] = float(new_list_of_coordinates[0])
+                new_list_of_coordinates[1] = float(new_list_of_coordinates[1])
+                list_of_coordinates.append(new_list_of_coordinates)
+            except ValueError:
+                pass
     return list_of_coordinates
 
 
@@ -25,8 +29,8 @@ def distance(point1, point2):
     :param point2: список координат второй точки
     :return: расстояние между точками
     """
-    x = abs(float(point1[0]) - float(point2[0]))
-    y = abs(float(point1[1]) - float(point2[1]))
+    x = abs(point1[0] - point2[0])
+    y = abs(point1[1] - point2[1])
     return sqrt(x**2 + y**2)
 
 
@@ -65,4 +69,5 @@ if __name__ == '__main__':
         print("min = ", minimum_distance(points))
     else:
         print("Error: Нужно минимум две точки")
+
 

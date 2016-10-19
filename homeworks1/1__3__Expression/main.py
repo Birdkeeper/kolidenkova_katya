@@ -21,7 +21,6 @@ def evaluate_expressions(list_expression):
 if __name__ == '__main__':
     for string in sys.argv[1:]:
         list_expression = search_expression(string)
-        #print(list_expression)
         evaluate_expressions(list_expression)
 
 

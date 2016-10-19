@@ -3,14 +3,14 @@ from xml.etree import ElementTree
 from datetime import date
 
 
-def find_currency(currency_cod):
+def find_currency(currency_cod, file_parse):
     """
-    Ищет курс нужной валюты в рублях
     :param currency_cod: код валюты
+    :param file_parse: распарсенный файл
     """
     err = True
     currency_cod = currency_cod.upper()
-    for line in fileParse.findall("Valute"):
+    for line in file_parse.findall("Valute"):
         CharCode = line.find("CharCode").text
         if CharCode == currency_cod:
             rub = line.find("Value").text
@@ -29,7 +29,7 @@ if __name__ == '__main__':
         url = "http://www.cbr.ru/scripts/XML_daily.asp?date_req=" + date_today
         file = urllib.request.urlopen(url)
         fileParse = ElementTree.parse(file)
-        find_currency(currency)
+        find_currency(currency, fileParse)
         print("Введите код валюты, для выхода нажмите 0")
         currency = input()
 
